@@ -16,4 +16,5 @@ module "dev" {
     source = "../../module"
 
     environment = "dev"
+    soft_delete_retention_days = 7
 }
