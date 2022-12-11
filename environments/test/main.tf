@@ -15,6 +15,7 @@ provider "azurerm" {
 module "test" {
     source = "../../module"
 
-    environment = "test"
+    environment                = "test"
+    soft_delete_retention_days = 14
   
 }
