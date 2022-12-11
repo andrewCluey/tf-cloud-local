@@ -16,6 +16,6 @@ module "test" {
     source = "../../module"
 
     environment                = "test"
-    soft_delete_retention_days = 14
+    soft_delete_retention_days = 10
   
 }
