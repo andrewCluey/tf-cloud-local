@@ -18,3 +18,8 @@ resource "azurerm_key_vault" "main" {
   purge_protection_enabled    = false
   sku_name                    = "standard"
 }
+
+resource "azurerm_private_dns_zone" "blob" {
+  name                = "privatelink.blob.core.windows.net"
+  resource_group_name = azurerm_resource_group.main.name
+}
